@@ -911,14 +911,6 @@ ul {
   }
 
 
-
-
-
-
-
-
-
-
    }
 
 
@@ -1088,13 +1080,3 @@ ul {
   }
 }
 
-      /* header add on in case
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap; */
-
-      /* header nav ul { */
-        /* 100percent of the parent container which is the nav
-        so the whole width of the 60 percent container */
-        /* width: 100%; */
