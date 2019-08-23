@@ -97,7 +97,818 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+  /* Global Styles */
+  html {
+    font-size: 16px;
+  }
+
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+h1 {
+  font-size: 2.25em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #e1e2ea;
+}
+
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #e1e2ea;
+  font-size: 1.125em;
+  font-weight: 500;
+  font-style: normal;
+
+  }
+
+p{
+  color: #e1e2ea;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px auto;
   
+}
+/* ------------------------------------- */
+
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+
+
+   /* Header -- Footer Styles */
+    header,
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+
+
+
+  /* Header Styles */
+
+    header {
+      background-color: #202322;
+      padding: 15px 0px;
+    }
+
+    header .content-wrapper {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    header figure {
+      width: 60%;
+
+    }
+
+    header nav {
+      width: 60%;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .header-divider {
+      width: 100%;
+    }
+
+    header nav ul li {
+      font-weight: 700;
+      font-size: 1.125em;
+      text-transform: uppercase;
+    }
+
+
+  /* Footer Styles */
+    footer {
+      background-color: #202322;
+    }
+
+
+    .contact {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .contact h4 {
+      margin: 0;
+    }
+
+    .contact p {
+      font-size: 0.875em;
+    }
+
+    .social {
+      text-align: center;
+    }
+
+    .social p {
+      display: inline-block;
+      margin: 0px 15px;
+      background-color: #527158;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+
+    }
+
+    .social-icons p i {
+      font-size: 1.125em;
+      padding: 10px 0;
+    }
+
+    footer .copyright {
+      width: 100%;
+    }
+
+    footer .copyright p {
+      font-size: 0.875em;
+      text-align: center;
+    }
+
+
+
+  /* ----- Hero Section Styles-----*/
+
+    .hero-area {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      min-height: 500px;
+      background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+/* ----- Form Area Styles-----*/
+
+    .form-area {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      background-color: #527158;
+    }
+
+    .form-area .content-wrapper {
+      margin-top: 20px;
+    }
+
+    .form-description p {
+      margin: 0;
+      font-size: 0.875em;
+    }
+    .form-area h3 {
+      margin-bottom: 9px;
+    }
+
+    .form {
+      margin-top: 22px;
+    }
+
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      font-style: italic;
+      color: #9d9ea4;
+      font-size: 0.875em;
+      font-weight: 400;
+    }
+
+    input[type=button] {
+      width: 100%;
+      margin-top: 20px;
+      background-color: #2a423a;
+      padding: 15px;
+      color: #e2e3ed;
+      font-size: 1.125em;
+      font-weight: 500;
+      border: none;
+      text-transform: uppercase;
+    }
+
+/* ----- Features Area Styles-----*/
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+      background-size: cover;
+      background-position: center;
+    }
+    .features h2 {
+      font-weight: 500;
+      font-size: 1.875em;
+      margin-top: 0;
+    }
+
+    .features-items {
+      /* building off the original container(.content-wrapper)
+      then added flex to the next container where the article items are(featured-items)
+      in order to justify center everything */
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .features-items article {
+      width: 55%;
+      margin: 30px 0px;
+    }
+
+    .features-items article p {
+      text-align: center;
+      font-size: 0.875em;
+      line-height: 1.125em;
+      margin: 0;
+    }
+
+
+    .features-items article p i {
+      font-size: 3.75em;
+      margin-bottom: 20px;
+    }
+
+
+
+  /* ----- Reviews Area Styles-----*/
+
+    .reviews {
+      display: flex;
+      background-color: #2a423a;
+    }
+
+    .reviews h2 {
+      font-size: 1.875em;
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    .reviews h3 {
+      margin: 20px 0;
+    }
+
+    .reviews p {
+      font-size: 1em;
+      line-height: 1.125em;
+      font-weight: 400;
+    }
+
+
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+  
+   /* ----- Mission Area Styles-----*/
+   
+   .mission {
+      display: flex;
+      background-color: #527158;
+    }
+
+    .mission h2 {
+      margin: 0;
+      font-size: 1.875em;
+      font-weight: 500;
+    }
+
+    .mission-content p {
+      font-size: 0.875em;
+      line-height: 1.285em;
+      font-weight: 400;
+    }
+    
+  /* ----- Map Area Styles-----*/
+
+    /* Making an iframe responsive
+    .map figure(container)
+    - position relative will position the container (.map figure) in relation to its parent container
+    in which its  (.map) and relates to its normal spot on the page .
+    you can adjust it to the top, bottom, right, or left without interrupting the flow of the other 
+    elements on the page.
+
+    -height 0 is to not give it height since the padding bottom of 80 percent will take care of it.
+
+    -overflow hidden will make the iframe not go out / overflow of the container.. 
+
+    padding-bottom 80%  sets up aspect ratio in which you have to have in order for the iframe to be
+    responsive since we are not setting a fixed height and width on the container. to get the aspect
+    ratio u divide the height and the width in which the height is 450/600=0.75 which is 75 percent*/
+    
+
+
+    /* .map iframe
+    -position absolute will alow to position the iframe anywhere in the (.map figure) 
+    container only since its relative only to the .map container
+    -top 0 left 0 will position it to the top left corner..
+    -height width 100 % will make it fill up the whole container.. */
+
+
+    .map figure {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 80%;
+    }
+
+    .map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+
+    
+/* ----- Contact Area Styles-----*/
+
+    .contact-section {
+      display: flex;
+      background-color: #2a423a;
+    }
+
+    .contact-section h2 {
+      font-weight: 500;
+      font-size: 1.875em;
+      margin: 0;
+    }
+    .contact-section h4 {
+     margin: 20px 0;
+    }
+
+    .contact-section p {
+    font-size: 0.875em;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+
+
+/* ==========================================================================
+    FAQ Page 
+   ========================================================================== */
+    .faq {
+      display: flex;
+      background-color: #527158;
+    }
+    .faq h2 {
+      line-height: 1em;
+      font-weight: 500;
+      font-size: 1.875em;
+      margin-bottom: 45px;
+    }
+    .faq h4 {
+      line-height: 1.5em;
+      margin: 0;
+    }
+    .faq-section {
+      margin-bottom: 40px;
+    }
+    .faq p {
+      font-size: 0.875em;
+      margin: 5px 0;
+    }
+    .faq-section-last {
+      margin-bottom: 0;
+    }
+
+
+
+
+/* ==========================================================================
+   Tablet Styles
+   ========================================================================== */
+    /* Home Page */
+
+    @media only screen and (min-width: 768px) {
+      
+      .content-wrapper {
+        margin: 100px auto;
+        width: 83%;
+        /* container has more space.. puts at 640px or at 83% instead of 90 %  */
+        max-width: 640px;
+        /* container stays at 640px even when the viewport gets bigger.Images
+        and text stay proportional to the cointaner and they dont resize  */
+      }
+      header .content-wrapper {
+        flex-flow: nowrap;
+        justify-content: space-between;
+      }
+      .header-divider {
+        display: none;
+      }
+      header figure {
+        width: 34.5%;
+        /* measured the figure with ruler to see how much percentage of the container */
+      }
+      header nav {
+        width: 20%;
+      }
+      header nav ul {
+        justify-content: space-between;
+      }
+      header nav ul li {
+        font-size: 1em;
+      }
+    
+    /* Hero Home Page */
+      
+
+    .hero-area {
+      min-height: 600px;
+    }
+
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1em;
+    }
+    
+
+    /* Form Area Home Page */
+    .form-area .content-wrapper {
+      margin: 50px 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .form-description {
+      width: 40%;
+    }
+    .form-description h3,
+    .form h3 {
+      font-size: 1.5em;
+    }
+
+    .form {
+      width: 46%;
+    }
+
+    .form-area br {
+      display: none;
+    }
+
+
+/* Features Area  Home Page */
+  .features h2 {
+    margin-bottom: 0;
+    font-size: 2.25em;
+  }
+
+  .features-items article {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  }
+  .features-items article p i {
+    font-size: 4.5em;
+    margin-bottom: 30px;
+  }
+
+  
+  .features-item-description {
+    width: 50%;
+  }
+        /* changing the widths of the paragraph(/featureitem-description) to 50 percent
+        because i had to get the article items first in display flex then i had to wrap them in column wrap
+        so it can go to the next line instead of together in row wrap.  then now i can adjust the width 
+         of the icons and paragraphs since the original article items container is already at 50 percent so  it
+         wont break the layout so i can adjust any width to all items in the article container in which
+         /* its the icons and fonts*/   
+
+        /* I could not adjust the widths of the paragraph on its own because the paragraph can
+        only follow the rules of the article container  which it was at 50 percent width only. all
+        the items in the article container will only be at 50 percent of the parent container which was 640px.
+        once  the container became a flex item i adjust the width  of the paragraph accordingly to 50 percent of the article container which
+        was at 340px..*/
+
+
+
+
+
+
+  /* Reviews Page */
+  .reviews .content-wrapper {
+    margin: 50px auto;
+  }
+  
+  .reviews h2 {
+    font-size: 2.25em;
+    line-height: 1em;
+    margin-bottom: 40px;
+    
+  }
+
+  .reviews-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews-items h3 {
+    font-size: 1.5em;
+    margin: -8px 0 0 0;
+  }
+
+  .reviews-items figure {
+    width: 47%;
+  }
+
+  .reviews-items article {
+    width: 47%;
+  }
+  .reviews p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
+
+  /* Footer Area Page */
+  footer h4 {
+    font-size: 1.5em;
+  }
+  footer .content-wrapper {
+    margin-bottom: 50px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact h4 {
+    margin: 1.33em 0;
+  }
+
+
+
+ /* FAQ Page */
+  .faq h2 {
+    font-size:  2.25em;
+    margin-top: 0;
+  }
+  .faq h4 {
+    font-size: 1.1em;
+    line-height: 1.125em;
+    margin-bottom: 15px;
+  }
+  .faq p {
+    font-size: 0.875em;
+  }
+
+  .faq .content-wrapper {
+    margin: 50px auto 25px auto;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .faq-section, .faq-section-last {
+    width: 45%;
+  }
+  .faq-section-last {
+    margin-bottom: 40px;
+  }
+
+
+/* About Page */
+
+.mission h2 {
+  font-size: 2.25em;
+  margin-bottom: 26px;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-content p {
+  font-size: 1em;
+  width: 46%;
+}
+
+.map figure {
+  padding-bottom: 45.5%;
+}
+/* adjusting the height of the iframe to make it about half */
+
+.contact-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.25em;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-section h4 {
+  font-size: 1.5em;
+}
+
+  }
+ 
+ 
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
+
+   @media only screen and (min-width: 1200px) {
+
+    .content-wrapper {
+      margin: 100px auto;
+      width: 80%;
+      max-width: 960px;
+    }
+
+    header figure {
+      width: 28%;
+    }
+
+    header nav {
+      width: 13.5%;
+    }
+    header nav ul li {
+      font-size: 1.125em;
+    }
+    /* Hero Page */
+    .hero-area {
+      min-height: 600px;
+    }
+
+    .hero-area .content-wrapper {
+      margin-top: 50px;
+    }
+
+    .hero-area h1 {
+      font-size: 3.75em;
+    }
+    /* Form Page */
+    .form-description {
+    width: 33.3%
+    }
+    .form {
+      width: 34%;
+    }
+
+    .form-area .content-wrapper {
+    justify-content: space-around;
+    margin: 50px 0;
+    }
+
+    .form-description h3, .form h3 {
+      font-size: 1.875em;
+      margin-top: 0;
+    }
+
+    .form-description p {
+      font-size: 1.125em;
+      line-height: 1.3em;
+    }
+    /* Features Page */
+    .features h2 {
+      width: 90%;
+      margin-bottom: 50px;
+    }
+    .features-items article {
+      width: 33.33%;
+    }
+
+    .features-item-description {
+      width: 60%;
+      
+  }
+
+    .features article .features-item-description {
+      font-size: 1.125em;
+    }
+
+    /*Reviews Page */ 
+    .reviews h2 {
+      margin-bottom: 75px;
+    }
+
+    .reviews-items figure {
+      width: 48%;
+    }
+
+    .reviews-items article {
+      width: 48%;
+    }
+    .reviews-items h3 {
+      margin-top: -7px;
+    }
+
+    .reviews p {
+      font-size: 1.125em;
+      line-height: 1.3em;
+    }
+
+    /* Footer Page */
+    .footer-content h4 {
+      font-size: 1.875em;
+    }
+    .contact p {
+      font-size: 1.125em;
+    }
+
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+    .faq h2 {
+      font-size: 3em;
+      margin-top: 45px;
+      margin-bottom: 55px;
+    }
+
+    .faq h4 {
+      font-size: 1.3em;
+    }
+
+    .faq p {
+      font-size: 1em;
+  }
+
+    .faq .content-wrapper {
+      margin-bottom: 50px;
+    }
+
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+   .mission h2 {
+     font-size: 3em;
+   }
+
+   .mission-content p {
+     font-size: 1.125em;
+   }
+
+   .map figure {
+    padding-bottom: 37.5%;
+  }
+
+  .contact-section h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .contact-section h4 {
+    font-size: 1.875em;
+  }
+
+  .contact-section p {
+    font-size: 1.125em;
+  }
 
 
 
@@ -106,6 +917,9 @@ textarea {
 
 
 
+
+
+   }
 
 
 /* ==========================================================================
@@ -274,3 +1088,13 @@ textarea {
   }
 }
 
+      /* header add on in case
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap; */
+
+      /* header nav ul { */
+        /* 100percent of the parent container which is the nav
+        so the whole width of the 60 percent container */
+        /* width: 100%; */
